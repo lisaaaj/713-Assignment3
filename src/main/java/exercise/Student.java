@@ -1,6 +1,6 @@
-
+package exercise;
 public class Student {
-    public String name;  // Should be private
+    private String name;
     public int age;
     public double gpa;
 
@@ -16,10 +16,10 @@ public class Student {
 
     // Age setter has unnecessary check (bug)
     public void setAge(int age) {
-        if (age < 0) {  // Bug: Should handle > 120 as well
-            this.age = 0;
-        } else {
+        if (Utils.isValidAge(age)) {
             this.age = age;
+        } else {
+            this.age = 0; 
         }
     }
 
