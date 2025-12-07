@@ -56,4 +56,4 @@ jobs:
         
     # The dependency graph step is optional but good practice, so we keep it.
     - name: Update dependency graph
-    uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
+      uses: advanced-security/maven-dependency-submission-action@571e99aab1055c2e71a1e2309b9691de18d6b7d6
